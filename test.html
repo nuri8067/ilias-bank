@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <h1 id="output">Loading...</h1>
+    <script>
+        // Test if JavaScript can execute
+        document.getElementById('output').textContent = 'JS работает!';
+        
+        // Test localStorage
+        try {
+            localStorage.setItem('test', 'ok');
+            console.log('localStorage работает');
+        } catch(e) {
+            console.log('localStorage ошибка:', e);
+        }
+        
+        // Test code
+        console.log('Тестовый скрипт успешно загружен');
+    </script>
+</body>
+</html>

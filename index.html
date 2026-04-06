@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Илияс Банк - официальный финтех-банк класса 11А! Переводы, платежи, магазин и кредиты">
+    <title>🏦 Илияс Банк - банк класса 11А</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#" class="logo" onclick="navigateTo('home'); return false;">
+                <div class="logo-icon">💳</div>
+                Илияс Банк
+            </a>
+
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="#" data-page="home" onclick="return false;">Главная</a></li>
+                    <li><a href="#" data-page="shop" onclick="return false;">Магазин</a></li>
+                    <li><a href="#" data-page="payments" onclick="return false;">Платежи</a></li>
+                    <li><a href="#" data-page="transfers" onclick="return false;">Переводы</a></li>
+                    <li><a href="#" data-page="credits" onclick="return false;">Кредиты</a></li>
+                    <li><a href="#" data-page="faq" onclick="return false;">FAQ</a></li>
+                    <li><a href="#" data-page="support" onclick="return false;">Поддержка</a></li>
+                    <li><a href="#" data-page="profile" onclick="return false;">Профиль</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <div id="user-info"></div>
+                <div id="balance-info"></div>
+                <button class="btn-auth btn-login" onclick="navigateTo('profile')" id="login-btn" style="display: block;">Вход</button>
+                <button class="btn-auth btn-signup" onclick="navigateTo('profile')" id="signup-btn" style="display: block;">Регистрация</button>
+            </div>
+
+            <!-- Burger Menu (Mobile) -->
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Content will be rendered here by JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Services -->
+                <div class="footer-section">
+                    <h5>Сервисы</h5>
+                    <ul>
+                        <li><a href="#" data-page="shop">Магазин</a></li>
+                        <li><a href="#" data-page="payments">Платежи</a></li>
+                        <li><a href="#" data-page="transfers">Переводы</a></li>
+                        <li><a href="#" data-page="credits">Кредиты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-section">
+                    <h5>Поддержка</h5>
+                    <ul>
+                        <li><a href="#" data-page="support">Контакты</a></li>
+                        <li><a href="#" data-page="faq">FAQ</a></li>
+                        <li><a href="#" data-page="support">Чат поддержки</a></li>
+                        <li><a href="#" data-page="support">Статус обслуживания</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h5>О компании</h5>
+                    <ul>
+                        <li><a href="#" data-page="about">О нас</a></li>
+                        <li><a href="#" data-page="careers">Вакансии</a></li>
+                        <li><a href="#" data-page="news">Новости</a></li>
+                        <li><a href="#" data-page="blog">Блог</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-section">
+                    <h5>Правовая информация</h5>
+                    <ul>
+                        <li><a href="#" data-page="terms">Условия использования</a></li>
+                        <li><a href="#" data-page="privacy">Политика приватности</a></li>
+                        <li><a href="#" data-page="cookies">Куки</a></li>
+                        <li><a href="#" data-page="security">Безопасность</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024-2025 🏦 Илияс Банк - Официальный банк класса 11А | Создано с ❤️ | Версия 1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
